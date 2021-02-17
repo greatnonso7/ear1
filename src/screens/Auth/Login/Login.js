@@ -15,17 +15,11 @@ const Login = () => {
   return (
     <View style={styles.container}>
       <StatusBar barStyle="light-content" />
-      <Image
-        source={require('../../assets/images/logo.png')}
-        style={styles.logo}
-      />
+      <Image source={require('images/logo.png')} style={styles.logo} />
       <View style={styles.imageContainer}>
+        <Image source={require('images/login1.png')} style={styles.imageLeft} />
         <Image
-          source={require('../../assets/images/login1.png')}
-          style={styles.imageLeft}
-        />
-        <Image
-          source={require('../../assets/images/login2.png')}
+          source={require('images/login2.png')}
           style={styles.imageRight}
         />
       </View>

@@ -11,31 +11,31 @@ const Ranting = () => {
       </View>
       <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
         <Image
-          source={require('../../assets/images/rant1.png')}
+          source={require('images/rant1.png')}
           style={styles.rant1}
           resizeMode="contain"
         />
         <Image
-          source={require('../../assets/images/rant2.png')}
+          source={require('images/rant2.png')}
           style={styles.rant2}
           resizeMode="contain"
         />
       </View>
       <View style={{ alignItems: 'center' }}>
         <Image
-          source={require('../../assets/images/rant3.png')}
+          source={require('images/rant3.png')}
           style={styles.rant3}
           resizeMode="contain"
         />
       </View>
       <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
         <Image
-          source={require('../../assets/images/rant4.png')}
+          source={require('images/rant4.png')}
           style={styles.rant4}
           resizeMode="contain"
         />
         <Image
-          source={require('../../assets/images/rant5.png')}
+          source={require('images/rant5.png')}
           style={styles.rant5}
           resizeMode="contain"
         />
@@ -51,10 +51,7 @@ const Ranting = () => {
             height: 60,
             borderRadius: 32,
           }}>
-          <Image
-            source={require('../../assets/images/fill.png')}
-            style={styles.fill}
-          />
+          <Image source={require('images/fill.png')} style={styles.fill} />
           <Text style={styles.rantText}>Start ranting</Text>
         </TouchableOpacity>
         <Text
