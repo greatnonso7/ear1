@@ -15,6 +15,7 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
+import Explore from './src/screens/Explore/Explore';
 import Login from './src/screens/Login/Login';
 import Ranting from './src/screens/Ranting/Ranting';
 
@@ -22,7 +23,8 @@ const App = () => {
   return (
     <>
       {/* <Login /> */}
-      <Ranting />
+      {/* <Ranting /> */}
+      <Explore />
     </>
   );
 };
