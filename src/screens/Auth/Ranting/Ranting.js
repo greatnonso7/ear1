@@ -1,7 +1,8 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
-import StyleGuide from '../../../theme';
+import StyleGuide from 'theme';
+import DeviceInfo from 'react-native-device-info';
 
 const Ranting = ({ navigation: { navigate } }) => {
   return (
@@ -76,7 +77,7 @@ const styles = StyleSheet.create({
   },
   setTextView: {
     alignItems: 'center',
-    marginTop: 55,
+    marginTop: DeviceInfo.hasNotch() ? 55 : 0,
   },
   setText: {
     fontSize: 24,
@@ -96,8 +97,8 @@ const styles = StyleSheet.create({
     left: 20,
   },
   rant3: {
-    width: 200,
-    height: 200,
+    width: 180,
+    height: 180,
   },
   rant4: {
     width: 150,

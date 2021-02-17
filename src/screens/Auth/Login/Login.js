@@ -79,6 +79,7 @@ const styles = StyleSheet.create({
   imageContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    alignItems: 'flex-start',
   },
   logo: {
     width: 45,
@@ -88,8 +89,8 @@ const styles = StyleSheet.create({
     ...StyleSheet.absoluteFillObject,
   },
   imageLeft: {
-    width: 210,
-    height: 500,
+    width: 170,
+    height: 400,
     position: 'relative',
     bottom: 20,
   },
@@ -106,13 +107,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   ear1Text: {
-    fontSize: 32,
-    // fontFamily: 'CoolveticaCrammedRg-Regular 400',
+    fontSize: 30,
   },
   loginButton: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 25,
+    marginTop: Platform.OS === 'android' ? 15 : 30,
     height: 52,
     borderRadius: 32,
   },
