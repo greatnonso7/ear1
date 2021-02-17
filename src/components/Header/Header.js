@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     marginLeft: 20,
   },
   searchContainer: {
-    backgroundColor: '#3B3C36',
+    backgroundColor: '#0D131B',
     height: 50,
     justifyContent: 'center',
     width: 50,

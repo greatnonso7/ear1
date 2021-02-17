@@ -1,6 +1,13 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import { View, Text, StyleSheet, Dimensions, Image } from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  Dimensions,
+  Image,
+  TouchableOpacity,
+} from 'react-native';
 import StyleGuide from '../../theme';
 import Header from '../../components/Header/Header';
 
@@ -109,6 +116,23 @@ const Explore = () => {
                 { position: 'relative', right: StyleGuide.spacing * 6 },
               ]}
             />
+          </View>
+          <View style={{ justifyContent: 'center', alignItems: 'center' }}>
+            <TouchableOpacity
+              activeOpacity={0.7}
+              style={{
+                justifyContent: 'center',
+                alignItems: 'center',
+                marginTop: StyleGuide.spacing * 4,
+                backgroundColor: '#0D131B',
+                borderWidth: 2,
+                width: 100,
+                height: 50,
+                borderRadius: 32,
+                borderColor: '#00BF69',
+              }}>
+              <Text style={{ color: '#00BF69' }}>Unfollow</Text>
+            </TouchableOpacity>
           </View>
         </View>
       </View>
