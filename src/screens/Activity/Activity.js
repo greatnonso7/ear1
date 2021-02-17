@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   icon: {
-    transform: [{ rotate: '10deg' }]
+    transform: [{ rotate: '10deg' }],
   },
   roomDescription: {
     color: StyleGuide.colors.white,
