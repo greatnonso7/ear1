@@ -24,7 +24,7 @@ const Message = () => {
           alignItems: 'center',
           position: 'absolute',
           left: StyleGuide.spacing * 20,
-          top: StyleGuide.spacing * 28,
+          top: StyleGuide.spacing * 25,
         }}>
         <View style={styles.iconContainer}>
           <FeatherIcon
