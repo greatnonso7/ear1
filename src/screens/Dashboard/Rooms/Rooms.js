@@ -8,8 +8,8 @@ import {
   TouchableOpacity,
   Dimensions,
 } from 'react-native';
-import Header from '../../components/Header/Header';
-import StyleGuide from '../../theme';
+import Header from 'components/Header/Header';
+import StyleGuide from 'theme';
 
 const { height } = Dimensions.get('window');
 
@@ -27,18 +27,18 @@ const Rooms = () => {
         }}>
         <View style={styles.iconContainer}>
           <Image
-            source={require('../../assets/images/headphone.png')}
+            source={require('images/headphone.png')}
             style={{ width: 60, height: 60 }}
           />
         </View>
       </View>
       <View style={styles.imageContainer}>
         <Image
-          source={require('../../assets/images/personImage1.png')}
+          source={require('images/personImage1.png')}
           style={styles.personImage}
         />
         <Image
-          source={require('../../assets/images/personImage2.png')}
+          source={require('images/personImage2.png')}
           style={styles.personImage}
         />
       </View>

@@ -8,8 +8,8 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
-import StyleGuide from '../../theme';
-import Header from '../../components/Header/Header';
+import StyleGuide from 'theme';
+import Header from 'components/Header/Header';
 
 const { height } = Dimensions.get('window');
 
@@ -27,11 +27,11 @@ const Explore = () => {
       <View style={styles.cardContainer}>
         <View style={styles.profileContainer}>
           <Image
-            source={require('../../assets/images/profile1.png')}
+            source={require('images/profile1.png')}
             style={styles.profile}
           />
           <Image
-            source={require('../../assets/images/profileLogo.png')}
+            source={require('images/profileLogo.png')}
             style={styles.profileLogo}
           />
         </View>
@@ -82,35 +82,35 @@ const Explore = () => {
               marginTop: StyleGuide.spacing * 2.5,
             }}>
             <Image
-              source={require('../../assets/images/profile1.png')}
+              source={require('images/profile1.png')}
               style={[
                 styles.profileImage,
                 { marginLeft: StyleGuide.spacing * 6 },
               ]}
             />
             <Image
-              source={require('../../assets/images/profile2.png')}
+              source={require('images/profile2.png')}
               style={[
                 styles.profileImage,
                 { position: 'relative', right: StyleGuide.spacing },
               ]}
             />
             <Image
-              source={require('../../assets/images/profile4.png')}
+              source={require('images/profile4.png')}
               style={[
                 styles.profileImage,
                 { position: 'relative', right: StyleGuide.spacing * 2.5 },
               ]}
             />
             <Image
-              source={require('../../assets/images/profile2.png')}
+              source={require('images/profile2.png')}
               style={[
                 styles.profileImage,
                 { position: 'relative', right: StyleGuide.spacing * 4 },
               ]}
             />
             <Image
-              source={require('../../assets/images/profile3.png')}
+              source={require('images/profile3.png')}
               style={[
                 styles.profileImage,
                 { position: 'relative', right: StyleGuide.spacing * 6 },
