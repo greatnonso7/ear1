@@ -2,15 +2,13 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 import EvilIcon from 'react-native-vector-icons/Feather';
-import StyleGuide from '../../theme';
+import StyleGuide from 'theme';
+import DeviceInfo from 'react-native-device-info';
 
 const Header = ({ title }) => {
   return (
     <View style={styles.headerContainer}>
-      <Image
-        source={require('../../assets/images/logo.png')}
-        style={styles.logo}
-      />
+      <Image source={require('images/logo.png')} style={styles.logo} />
       <Text style={styles.title}>{title}</Text>
       <View style={styles.searchContainer}>
         <EvilIcon
@@ -26,13 +24,15 @@ const Header = ({ title }) => {
 
 const styles = StyleSheet.create({
   headerContainer: {
-    marginTop: StyleGuide.spacing * 6,
+    marginTop: DeviceInfo.hasNotch()
+      ? StyleGuide.spacing * 6
+      : StyleGuide.spacing * 2,
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
   logo: {
-    width: 45,
-    height: 50,
+    width: 35,
+    height: 40,
     marginLeft: 20,
   },
   searchContainer: {

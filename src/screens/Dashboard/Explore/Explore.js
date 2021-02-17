@@ -7,6 +7,7 @@ import {
   Dimensions,
   Image,
   TouchableOpacity,
+  Platform,
 } from 'react-native';
 import StyleGuide from 'theme';
 import Header from 'components/Header/Header';
@@ -82,14 +83,14 @@ const Explore = () => {
               marginTop: StyleGuide.spacing * 2.5,
             }}>
             <Image
-              source={require('images/profile1.png')}
+              source={require('../../../assets/images/profile1.png')}
               style={[
                 styles.profileImage,
                 { marginLeft: StyleGuide.spacing * 6 },
               ]}
             />
             <Image
-              source={require('images/profile2.png')}
+              source={require('../../../assets/images/profile2.png')}
               style={[
                 styles.profileImage,
                 { position: 'relative', right: StyleGuide.spacing },
@@ -167,14 +168,14 @@ const styles = StyleSheet.create({
   cardContainer: {
     marginHorizontal: 25,
     marginTop: StyleGuide.spacing * 3,
-    height: height * 0.61,
+    height: Platform.OS === 'android' ? height * 0.67 : height * 0.55,
     borderRadius: 32,
     backgroundColor: '#0D131B',
   },
   profileContainer: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: StyleGuide.spacing * 5,
+    marginTop: StyleGuide.spacing * 2,
   },
   profile: {
     width: 100,
