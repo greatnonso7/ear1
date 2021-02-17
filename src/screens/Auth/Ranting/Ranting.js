@@ -3,7 +3,7 @@ import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import StyleGuide from '../../../theme';
 
-const Ranting = () => {
+const Ranting = ({ navigation: { navigate } }) => {
   return (
     <View style={styles.container}>
       <View style={styles.setTextView}>
@@ -43,6 +43,7 @@ const Ranting = () => {
       <View style={{ marginHorizontal: 20, marginVertical: 50 }}>
         <TouchableOpacity
           activeOpacity={0.7}
+          onPress={() => navigate('Username')}
           style={{
             flexDirection: 'row',
             justifyContent: 'center',
