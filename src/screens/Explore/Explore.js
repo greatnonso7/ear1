@@ -68,26 +68,46 @@ const Explore = () => {
             }}>
             Public Rooms
           </Text>
-          <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
+          <View
+            style={{
+              flexDirection: 'row',
+              justifyContent: 'center',
+              marginTop: StyleGuide.spacing * 2.5,
+            }}>
             <Image
               source={require('../../assets/images/profile1.png')}
-              style={styles.profileImage}
+              style={[
+                styles.profileImage,
+                { marginLeft: StyleGuide.spacing * 6 },
+              ]}
             />
             <Image
               source={require('../../assets/images/profile2.png')}
-              style={styles.profileImage}
+              style={[
+                styles.profileImage,
+                { position: 'relative', right: StyleGuide.spacing },
+              ]}
             />
             <Image
               source={require('../../assets/images/profile4.png')}
-              style={styles.profileImage}
+              style={[
+                styles.profileImage,
+                { position: 'relative', right: StyleGuide.spacing * 2.5 },
+              ]}
             />
             <Image
               source={require('../../assets/images/profile2.png')}
-              style={styles.profileImage}
+              style={[
+                styles.profileImage,
+                { position: 'relative', right: StyleGuide.spacing * 4 },
+              ]}
             />
             <Image
               source={require('../../assets/images/profile3.png')}
-              style={styles.profileImage}
+              style={[
+                styles.profileImage,
+                { position: 'relative', right: StyleGuide.spacing * 6 },
+              ]}
             />
           </View>
         </View>
