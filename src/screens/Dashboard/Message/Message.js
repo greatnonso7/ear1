@@ -12,7 +12,7 @@ import Header from 'components/Header/Header';
 import StyleGuide from 'theme';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 
-const { height } = Dimensions.get('window');
+const { height, width } = Dimensions.get('window');
 
 const Message = () => {
   return (
@@ -23,8 +23,8 @@ const Message = () => {
           justifyContent: 'center',
           alignItems: 'center',
           position: 'absolute',
-          left: StyleGuide.spacing * 20,
-          top: StyleGuide.spacing * 25,
+          left: width / 3,
+          top: width * 0.5,
         }}>
         <View style={styles.iconContainer}>
           <FeatherIcon

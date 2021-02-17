@@ -7,6 +7,7 @@ import {
   Dimensions,
   Image,
   TouchableOpacity,
+  Platform,
 } from 'react-native';
 import StyleGuide from 'theme';
 
@@ -34,6 +35,12 @@ const Account = () => {
           <Image
             source={require('images/profileLogo.png')}
             style={styles.profileLogo}
+          />
+        </View>
+        <View style={{ position: 'absolute', right: 20, top: 20 }}>
+          <Image
+            source={require('../../../assets/images/Shape.png')}
+            style={{ width: 30, height: 30 }}
           />
         </View>
         <View
@@ -68,72 +75,32 @@ const Account = () => {
           <Text
             style={{
               textAlign: 'center',
-              marginTop: StyleGuide.spacing * 6,
+              marginTop: StyleGuide.spacing * 2,
               color: StyleGuide.colors.white,
               fontSize: 16,
               fontWeight: 'bold',
               opacity: 0.5,
             }}>
-            Public Rooms
+            Photos
           </Text>
           <View
             style={{
               flexDirection: 'row',
-              justifyContent: 'center',
-              marginTop: StyleGuide.spacing * 2.5,
+              justifyContent: 'space-evenly',
+              marginTop: StyleGuide.spacing * 2,
             }}>
             <Image
-              source={require('images/profile1.png')}
-              style={[
-                styles.profileImage,
-                { marginLeft: StyleGuide.spacing * 6 },
-              ]}
+              source={require('images/square1.png')}
+              style={styles.profileImage}
             />
             <Image
-              source={require('images/profile2.png')}
-              style={[
-                styles.profileImage,
-                { position: 'relative', right: StyleGuide.spacing },
-              ]}
+              source={require('images/square2.png')}
+              style={styles.profileImage}
             />
             <Image
-              source={require('images/profile4.png')}
-              style={[
-                styles.profileImage,
-                { position: 'relative', right: StyleGuide.spacing * 2.5 },
-              ]}
+              source={require('images/square3.png')}
+              style={styles.profileImage}
             />
-            <Image
-              source={require('images/profile2.png')}
-              style={[
-                styles.profileImage,
-                { position: 'relative', right: StyleGuide.spacing * 4 },
-              ]}
-            />
-            <Image
-              source={require('images/profile3.png')}
-              style={[
-                styles.profileImage,
-                { position: 'relative', right: StyleGuide.spacing * 6 },
-              ]}
-            />
-          </View>
-          <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-            <TouchableOpacity
-              activeOpacity={0.7}
-              style={{
-                justifyContent: 'center',
-                alignItems: 'center',
-                marginTop: StyleGuide.spacing * 4,
-                backgroundColor: '#0D131B',
-                borderWidth: 2,
-                width: 100,
-                height: 50,
-                borderRadius: 32,
-                borderColor: '#00BF69',
-              }}>
-              <Text style={{ color: '#00BF69' }}>Unfollow</Text>
-            </TouchableOpacity>
           </View>
         </View>
       </View>
@@ -178,14 +145,14 @@ const styles = StyleSheet.create({
   cardContainer: {
     marginHorizontal: 25,
     marginTop: StyleGuide.spacing * 3,
-    height: height * 0.61,
+    height: Platform.OS === 'android' ? height * 0.61 : height * 0.5,
     borderRadius: 32,
     backgroundColor: '#0D131B',
   },
   profileContainer: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: StyleGuide.spacing * 5,
+    marginTop: StyleGuide.spacing * 2,
   },
   profile: {
     width: 100,
@@ -222,8 +189,8 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   profileImage: {
-    width: 50,
-    height: 50,
+    width: 80,
+    height: 80,
   },
 });
 
