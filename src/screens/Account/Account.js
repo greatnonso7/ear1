@@ -16,7 +16,9 @@ const { height } = Dimensions.get('window');
 const Account = () => {
   return (
     <View style={{ flex: 1, backgroundColor: StyleGuide.colors.darkColor }}>
-      <Header title="Explore" />
+      <View style={styles.headerContainer}>
+        <Text style={styles.title}>Account</Text>
+      </View>
       <View style={styles.tabContainer}>
         <View>
           <Text style={styles.activeTab}>PROFILE</Text>
@@ -141,6 +143,16 @@ const Account = () => {
 };
 
 const styles = StyleSheet.create({
+  headerContainer: {
+    marginTop: StyleGuide.spacing * 6,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  title: {
+    color: StyleGuide.colors.white,
+    fontSize: 32,
+  },
   tabContainer: {
     flexDirection: 'row',
     justifyContent: 'space-evenly',
