@@ -20,6 +20,10 @@
 		854EFA6C79CB9894981E35B8 /* libPods-ear1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 137457643B0C692E4FF9A228 /* libPods-ear1.a */; };
 		ADD2A9F4A5EECBE898647497 /* libPods-ear1-ear1Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC35A674C3F05E86406926C1 /* libPods-ear1-ear1Tests.a */; };
 		FDC55D0F19DE65F2DA9B4E34 /* libPods-ear1-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0EFEEA6D3114053DA7DD7E /* libPods-ear1-tvOS.a */; };
+		D50BBE37E500446AABE894B9 /* coolvetica compressed rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0A770C8C8814BF4943A0E62 /* coolvetica compressed rg.ttf */; };
+		5C49B60918B54DAC9587537C /* coolvetica condensed rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 895808D9C5E3471EBCAF7BE9 /* coolvetica condensed rg.ttf */; };
+		42550B846DC4499EBC52DA6C /* coolvetica crammed rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFE970CB0C33485A88AFD58D /* coolvetica crammed rg.ttf */; };
+		5F7EC4C300284552A2420109 /* coolvetica rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3884A03CA46F458A9A8F56EB /* coolvetica rg.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		EC35A674C3F05E86406926C1 /* libPods-ear1-ear1Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ear1-ear1Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		B0A770C8C8814BF4943A0E62 /* coolvetica compressed rg.ttf */ = {isa = PBXFileReference; name = "coolvetica compressed rg.ttf"; path = "../src/assets/fonts/coolvetica compressed rg.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		895808D9C5E3471EBCAF7BE9 /* coolvetica condensed rg.ttf */ = {isa = PBXFileReference; name = "coolvetica condensed rg.ttf"; path = "../src/assets/fonts/coolvetica condensed rg.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AFE970CB0C33485A88AFD58D /* coolvetica crammed rg.ttf */ = {isa = PBXFileReference; name = "coolvetica crammed rg.ttf"; path = "../src/assets/fonts/coolvetica crammed rg.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3884A03CA46F458A9A8F56EB /* coolvetica rg.ttf */ = {isa = PBXFileReference; name = "coolvetica rg.ttf"; path = "../src/assets/fonts/coolvetica rg.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +189,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				681D0753F4A507DF26803D84 /* Pods */,
+				7F73B06A9A3D4345BD410708 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -197,6 +206,18 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		7F73B06A9A3D4345BD410708 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				B0A770C8C8814BF4943A0E62 /* coolvetica compressed rg.ttf */,
+				895808D9C5E3471EBCAF7BE9 /* coolvetica condensed rg.ttf */,
+				AFE970CB0C33485A88AFD58D /* coolvetica crammed rg.ttf */,
+				3884A03CA46F458A9A8F56EB /* coolvetica rg.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -342,6 +363,10 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				D50BBE37E500446AABE894B9 /* coolvetica compressed rg.ttf in Resources */,
+				5C49B60918B54DAC9587537C /* coolvetica condensed rg.ttf in Resources */,
+				42550B846DC4499EBC52DA6C /* coolvetica crammed rg.ttf in Resources */,
+				5F7EC4C300284552A2420109 /* coolvetica rg.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
