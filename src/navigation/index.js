@@ -2,6 +2,7 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import Onboarding from './onboarding';
 import Dashboard from './account';
+// import Dashboard from './account/explore';
 
 const Stack = createStackNavigator();
 
