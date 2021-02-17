@@ -28,6 +28,69 @@ const Explore = () => {
             style={styles.profileLogo}
           />
         </View>
+        <View
+          style={{
+            justifyContent: 'center',
+            alignItems: 'center',
+            marginTop: StyleGuide.spacing,
+          }}>
+          <Text style={styles.displayName}>Muheez Akanni</Text>
+          <Text style={styles.username}>@creathor</Text>
+        </View>
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'space-evenly',
+            marginTop: StyleGuide.spacing * 2,
+          }}>
+          <View>
+            <Text style={styles.textCount}>12</Text>
+            <Text style={styles.textTopic}>Rooms</Text>
+          </View>
+          <View>
+            <Text style={styles.textCount}>2,215</Text>
+            <Text style={styles.textTopic}>Followers</Text>
+          </View>
+          <View>
+            <Text style={styles.textCount}>15</Text>
+            <Text style={styles.textTopic}>Following</Text>
+          </View>
+        </View>
+        <View>
+          <Text
+            style={{
+              textAlign: 'center',
+              marginTop: StyleGuide.spacing * 2,
+              color: StyleGuide.colors.white,
+              fontSize: 16,
+              fontWeight: 'bold',
+              opacity: 0.5,
+            }}>
+            Public Rooms
+          </Text>
+          <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
+            <Image
+              source={require('../../assets/images/profile1.png')}
+              style={styles.profileImage}
+            />
+            <Image
+              source={require('../../assets/images/profile2.png')}
+              style={styles.profileImage}
+            />
+            <Image
+              source={require('../../assets/images/profile4.png')}
+              style={styles.profileImage}
+            />
+            <Image
+              source={require('../../assets/images/profile2.png')}
+              style={styles.profileImage}
+            />
+            <Image
+              source={require('../../assets/images/profile3.png')}
+              style={styles.profileImage}
+            />
+          </View>
+        </View>
       </View>
     </View>
   );
@@ -79,6 +142,33 @@ const styles = StyleSheet.create({
     position: 'absolute',
     right: 120,
     top: 60,
+  },
+  displayName: {
+    color: StyleGuide.colors.white,
+    fontWeight: 'bold',
+    fontSize: 24,
+  },
+  username: {
+    color: StyleGuide.colors.white,
+    opacity: 0.5,
+    fontSize: 16,
+  },
+  textCount: {
+    color: StyleGuide.colors.white,
+    fontSize: 28,
+    textAlign: 'center',
+    fontWeight: 'bold',
+  },
+  textTopic: {
+    color: StyleGuide.colors.white,
+    opacity: 0.5,
+    fontSize: 16,
+    textAlign: 'center',
+    fontWeight: 'bold',
+  },
+  profileImage: {
+    width: 50,
+    height: 50,
   },
 });
 
