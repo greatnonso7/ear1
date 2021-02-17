@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 import EvilIcon from 'react-native-vector-icons/Feather';
@@ -25,7 +26,6 @@ const Header = ({ title }) => {
 
 const styles = StyleSheet.create({
   headerContainer: {
-    flex: 1,
     marginTop: StyleGuide.spacing * 6,
     flexDirection: 'row',
     justifyContent: 'space-between',
