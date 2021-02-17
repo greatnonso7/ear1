@@ -1,43 +1,13 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
-import Account from './src/screens/Account/Account';
-import Activity from './src/screens/Activity/Activity';
-import Explore from './src/screens/Explore/Explore';
-import Login from './src/screens/Login/Login';
-import Message from './src/screens/Message/Message';
-import Ranting from './src/screens/Ranting/Ranting';
-import Rooms from './src/screens/Rooms/Rooms';
+import { NavigationContainer } from '@react-navigation/native';
+import { AppNavigation } from 'navigation';
 
-const App = () => {
+function App() {
   return (
-    <>
-      {/* <Login /> */}
-      {/* <Ranting /> */}
-      {/* <Explore /> */}
-      {/* <Rooms /> */}
-      {/* <Activity /> */}
-      <Account />
-    </>
+    <NavigationContainer>
+      <AppNavigation />
+    </NavigationContainer>
   );
 };
-
-const styles = StyleSheet.create({
-
-});
 
 export default App;

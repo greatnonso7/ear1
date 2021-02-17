@@ -1,7 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
-import StyleGuide from '../../theme';
+import StyleGuide from '../../../theme';
 
 const Ranting = () => {
   return (
