@@ -67,7 +67,7 @@ const Explore = () => {
           <Text
             style={{
               textAlign: 'center',
-              marginTop: StyleGuide.spacing * 2,
+              marginTop: StyleGuide.spacing * 6,
               color: StyleGuide.colors.white,
               fontSize: 16,
               fontWeight: 'bold',
@@ -174,7 +174,7 @@ const styles = StyleSheet.create({
   profileContainer: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: StyleGuide.spacing * 3,
+    marginTop: StyleGuide.spacing * 5,
   },
   profile: {
     width: 100,
