@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
   title: {
     color: StyleGuide.colors.white,
     fontSize: 32,
+    fontFamily: 'CoolveticaRg-Regular 400',
   },
 });
 

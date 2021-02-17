@@ -31,6 +31,7 @@ const Login = ({ navigation: { navigate } }) => {
         </View>
         <View style={{ marginTop: 20 }}>
           <TouchableOpacity
+            activeOpacity={0.7}
             onPress={() => navigate('Ranting')}
             style={[styles.loginButton, { backgroundColor: '#171817' }]}>
             <Text style={[styles.loginButtonText, { color: 'white' }]}>
@@ -38,11 +39,13 @@ const Login = ({ navigation: { navigate } }) => {
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
+            activeOpacity={0.7}
             onPress={() => navigate('Ranting')}
             style={[styles.loginButton, { backgroundColor: '#00BF69' }]}>
             <Text style={styles.loginButtonText}>Sign Up With Google</Text>
           </TouchableOpacity>
           <TouchableOpacity
+            activeOpacity={0.7}
             onPress={() => navigate('Ranting')}
             style={[styles.loginButton, { backgroundColor: '#11ADFF' }]}>
             <Text style={[styles.loginButtonText, { color: 'white' }]}>
@@ -108,6 +111,7 @@ const styles = StyleSheet.create({
   },
   ear1Text: {
     fontSize: 30,
+    fontFamily: 'CoolveticaRg-Regular 400',
   },
   loginButton: {
     justifyContent: 'center',
@@ -118,6 +122,7 @@ const styles = StyleSheet.create({
   },
   loginButtonText: {
     fontSize: 19,
+    fontFamily: 'CoolveticaRg-Regular 400',
   },
 });
 

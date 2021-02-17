@@ -48,7 +48,7 @@ const Rooms = () => {
             style={{
               color: StyleGuide.colors.white,
               fontSize: 24,
-              fontWeight: 'bold',
+              fontFamily: 'CoolveticaRg-Regular 400',
             }}>
             No Rooms
           </Text>
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
   },
   roomText: {
     fontSize: 19,
-    fontWeight: 'bold',
+    fontFamily: 'CoolveticaRg-Regular 400',
   },
 });
 

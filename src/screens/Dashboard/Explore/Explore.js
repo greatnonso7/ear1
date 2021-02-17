@@ -12,7 +12,7 @@ import {
 import StyleGuide from 'theme';
 import Header from 'components/Header/Header';
 
-const { height } = Dimensions.get('window');
+const { height, width } = Dimensions.get('window');
 
 const Explore = () => {
   return (
@@ -71,7 +71,7 @@ const Explore = () => {
               marginTop: StyleGuide.spacing * 6,
               color: StyleGuide.colors.white,
               fontSize: 16,
-              fontWeight: 'bold',
+              fontFamily: 'CoolveticaRg-Regular 400',
               opacity: 0.5,
             }}>
             Public Rooms
@@ -185,12 +185,12 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     position: 'absolute',
-    right: 120,
+    right: width / 3.5,
     top: 60,
   },
   displayName: {
     color: StyleGuide.colors.white,
-    fontWeight: 'bold',
+    fontFamily: 'CoolveticaRg-Regular 400',
     fontSize: 24,
   },
   username: {
@@ -202,14 +202,14 @@ const styles = StyleSheet.create({
     color: StyleGuide.colors.white,
     fontSize: 28,
     textAlign: 'center',
-    fontWeight: 'bold',
+    fontFamily: 'CoolveticaRg-Regular 400',
   },
   textTopic: {
     color: StyleGuide.colors.white,
     opacity: 0.5,
     fontSize: 16,
     textAlign: 'center',
-    fontWeight: 'bold',
+    fontFamily: 'CoolveticaRg-Regular 400',
   },
   profileImage: {
     width: 50,

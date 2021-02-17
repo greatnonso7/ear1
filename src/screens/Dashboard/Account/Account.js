@@ -118,6 +118,7 @@ const styles = StyleSheet.create({
   title: {
     color: StyleGuide.colors.white,
     fontSize: 32,
+    fontFamily: 'CoolveticaRg-Regular 400',
   },
   tabContainer: {
     flexDirection: 'row',
@@ -167,7 +168,7 @@ const styles = StyleSheet.create({
   },
   displayName: {
     color: StyleGuide.colors.white,
-    fontWeight: 'bold',
+    fontFamily: 'CoolveticaRg-Regular 400',
     fontSize: 24,
   },
   username: {
@@ -179,14 +180,14 @@ const styles = StyleSheet.create({
     color: StyleGuide.colors.white,
     fontSize: 28,
     textAlign: 'center',
-    fontWeight: 'bold',
+    fontFamily: 'CoolveticaRg-Regular 400',
   },
   textTopic: {
     color: StyleGuide.colors.white,
     opacity: 0.5,
     fontSize: 16,
     textAlign: 'center',
-    fontWeight: 'bold',
+    fontFamily: 'CoolveticaRg-Regular 400',
   },
   profileImage: {
     width: 80,

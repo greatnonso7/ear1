@@ -54,6 +54,7 @@ const Username = ({ navigation: { navigate } }) => {
             username.length === 0 ? '#134921' : StyleGuide.colors.green,
           borderRadius: 32,
           marginHorizontal: 20,
+          fontFamily: 'CoolveticaRg-Regular 400',
           justifyContent: 'center',
           alignItems: 'center',
         }}>
@@ -61,7 +62,7 @@ const Username = ({ navigation: { navigate } }) => {
           style={{
             color: StyleGuide.colors.black,
             fontSize: 20,
-            fontWeight: 'bold',
+            fontFamily: 'CoolveticaRg-Regular 400',
           }}>
           Continue
         </Text>
@@ -83,7 +84,7 @@ const styles = StyleSheet.create({
   },
   username: {
     color: StyleGuide.colors.white,
-    fontWeight: 'bold',
+    fontFamily: 'CoolveticaRg-Regular 400',
     fontSize: 24,
   },
   usernameDescription: {

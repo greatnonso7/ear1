@@ -77,10 +77,11 @@ const styles = StyleSheet.create({
   },
   setTextView: {
     alignItems: 'center',
-    marginTop: DeviceInfo.hasNotch() ? 55 : 0,
+    marginTop: DeviceInfo.hasNotch() ? 55 : 10,
   },
   setText: {
     fontSize: 24,
+    fontFamily: 'CoolveticaRg-Regular 400',
     color: StyleGuide.colors.white,
   },
   rant1: {
@@ -119,7 +120,7 @@ const styles = StyleSheet.create({
   },
   rantText: {
     fontSize: 19,
-    fontWeight: 'bold',
+    fontFamily: 'CoolveticaRg-Regular 400',
   },
 });
 
