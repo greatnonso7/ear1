@@ -1,8 +1,10 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Dimensions, Image } from 'react-native';
 import StyleGuide from '../../theme';
 import Header from '../../components/Header/Header';
+
+const { height } = Dimensions.get('window');
 
 const Explore = () => {
   return (
@@ -14,6 +16,18 @@ const Explore = () => {
           <View style={styles.active} />
         </View>
         <Text style={styles.inactiveTab}>ROOMS</Text>
+      </View>
+      <View style={styles.cardContainer}>
+        <View style={styles.profileContainer}>
+          <Image
+            source={require('../../assets/images/profile1.png')}
+            style={styles.profile}
+          />
+          <Image
+            source={require('../../assets/images/profileLogo.png')}
+            style={styles.profileLogo}
+          />
+        </View>
       </View>
     </View>
   );
@@ -42,6 +56,29 @@ const styles = StyleSheet.create({
     color: StyleGuide.colors.white,
     fontWeight: 'bold',
     opacity: 0.5,
+  },
+  cardContainer: {
+    marginHorizontal: 25,
+    marginTop: StyleGuide.spacing * 3,
+    height: height * 0.61,
+    borderRadius: 32,
+    backgroundColor: '#0D131B',
+  },
+  profileContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: StyleGuide.spacing * 3,
+  },
+  profile: {
+    width: 100,
+    height: 100,
+  },
+  profileLogo: {
+    width: 40,
+    height: 40,
+    position: 'absolute',
+    right: 120,
+    top: 60,
   },
 });
 
