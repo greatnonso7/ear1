@@ -8,9 +8,17 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import StyleGuide from 'theme';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const Username = () => {
+const Username = ({ navigation: { navigate } }) => {
   const [username, setUsername] = useState('');
+
+  const submit = () => {
+    const saveUser = AsyncStorage.setItem('username', username);
+    if (saveUser) {
+      navigate('Account', { screen: 'Explore' });
+    }
+  };
 
   return (
     <View style={styles.container}>
@@ -46,9 +54,12 @@ const Username = () => {
       <View flex={0.35} />
       <TouchableOpacity
         activeOpacity={0.7}
+        disabled={username.length === 0 ? true : false}
+        onPress={submit}
         style={{
           flex: 0.08,
-          backgroundColor: StyleGuide.colors.green,
+          backgroundColor:
+            username.length === 0 ? '#134921' : StyleGuide.colors.green,
           borderRadius: 32,
           marginHorizontal: 20,
           justifyContent: 'center',
