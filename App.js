@@ -18,13 +18,15 @@ import {
 import Explore from './src/screens/Explore/Explore';
 import Login from './src/screens/Login/Login';
 import Ranting from './src/screens/Ranting/Ranting';
+import Rooms from './src/screens/Rooms/Rooms';
 
 const App = () => {
   return (
     <>
       {/* <Login /> */}
       {/* <Ranting /> */}
-      <Explore />
+      {/* <Explore /> */}
+      <Rooms />
     </>
   );
 };
