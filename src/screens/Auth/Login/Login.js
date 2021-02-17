@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import StyleGuide from 'theme';
 
-const Login = () => {
+const Login = ({ navigation: { navigate } }) => {
   return (
     <View style={styles.container}>
       <StatusBar barStyle="light-content" />
@@ -31,16 +31,19 @@ const Login = () => {
         </View>
         <View style={{ marginTop: 20 }}>
           <TouchableOpacity
+            onPress={() => navigate('Ranting')}
             style={[styles.loginButton, { backgroundColor: '#171817' }]}>
             <Text style={[styles.loginButtonText, { color: 'white' }]}>
               Login / Sign Up With Apple
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
+            onPress={() => navigate('Ranting')}
             style={[styles.loginButton, { backgroundColor: '#00BF69' }]}>
             <Text style={styles.loginButtonText}>Sign Up With Google</Text>
           </TouchableOpacity>
           <TouchableOpacity
+            onPress={() => navigate('Ranting')}
             style={[styles.loginButton, { backgroundColor: '#11ADFF' }]}>
             <Text style={[styles.loginButtonText, { color: 'white' }]}>
               Sign Up With Twitter
@@ -56,6 +59,7 @@ const Login = () => {
           }}>
           <Text style={{ color: 'white' }}>Have an account? </Text>
           <TouchableOpacity
+            onPress={() => navigate('Ranting')}
             style={{ justifyContent: 'center', alignItems: 'center' }}>
             <Text style={{ color: 'white', textDecorationLine: 'underline' }}>
               Login
