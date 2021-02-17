@@ -8,8 +8,8 @@ import {
   TouchableOpacity,
   Dimensions,
 } from 'react-native';
-import Header from '../../components/Header/Header';
-import StyleGuide from '../../theme';
+import Header from 'components/Header/Header';
+import StyleGuide from 'theme';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const { height } = Dimensions.get('window');
@@ -37,11 +37,11 @@ const Activity = () => {
       </View>
       <View style={styles.imageContainer}>
         <Image
-          source={require('../../assets/images/personImage1.png')}
+          source={require('images/personImage1.png')}
           style={styles.personImage}
         />
         <Image
-          source={require('../../assets/images/personImage2.png')}
+          source={require('images/personImage2.png')}
           style={styles.personImage}
         />
       </View>
