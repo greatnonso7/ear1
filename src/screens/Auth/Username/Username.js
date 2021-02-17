@@ -16,7 +16,7 @@ const Username = ({ navigation: { navigate } }) => {
   const submit = () => {
     const saveUser = AsyncStorage.setItem('username', username);
     if (saveUser) {
-      navigate('Account', { screen: 'Explore' });
+      navigate('Dashboard', { screen: 'Explore' });
     }
   };
 
